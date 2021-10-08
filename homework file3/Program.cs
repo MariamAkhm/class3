@@ -15,7 +15,7 @@ namespace homework_file3
             double number = Convert.ToDouble(Console.ReadLine());
             if(number>0)
             {
-                Console.WriteLine("Это число= "+number);
+                Console.WriteLine("Это число= "+number);//неполный условный оператор
             }
             if(number<0)
             {
@@ -36,7 +36,7 @@ namespace homework_file3
             Console.WriteLine("Введите название животного, которого встретила лягушка");
             string mouthSize = "wide";
             string animal = Console.ReadLine();
-            if (animal.ToLower() == "аллигатор")
+            if (animal.ToLower().Contains("аллигатор"))
             {
                 mouthSize = "small";
             }
@@ -46,6 +46,7 @@ namespace homework_file3
             Console.WriteLine("Введите посетителя");
             string person = Console.ReadLine();
             string drink = "beer";
+
             if (person.ToLower()=="jabroni")
             {
                 drink="Patron Tequila";
@@ -227,7 +228,7 @@ namespace homework_file3
             byte c = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Введите номер горизонтали, куда переместится ладья");
             byte d = Convert.ToByte(Console.ReadLine());
-            if (a < 0 && a >= 8 && b<0 && b>=8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b>0 && b<=8 && c > 0 && c <=8 && d > 0 && d <= 8)
             {
                 if (a == c || b == d)
                 {
@@ -252,7 +253,7 @@ namespace homework_file3
             c = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Введите номер горизонтали, куда переместится слон");
             d = Convert.ToByte(Console.ReadLine());
-            if (a < 0 && a >= 8 && b < 0 && b >= 8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b > 0 && b <= 8 && c > 0 && c <= 8 && d > 0 && d <= 8)
             {
                 if (Math.Abs(c - a) == Math.Abs(d - b))
                 {
@@ -277,7 +278,7 @@ namespace homework_file3
             c = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Введите номер горизонтали, куда переместится король");
             d = Convert.ToByte(Console.ReadLine());
-            if (a < 0 && a >= 8 && b < 0 && b >= 8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b > 0 && b <= 8 && c > 0 && c <= 8 && d > 0 && d <= 8)
             {
                 if (Math.Abs(c - a) <= 1 && Math.Abs(d - b) <= 1)
                 {
@@ -303,7 +304,7 @@ namespace homework_file3
             c = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Введите номер горизонтали, куда переместится ферзь");
             d = Convert.ToByte(Console.ReadLine());
-            if (a < 0 && a >= 8 && b < 0 && b >= 8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b > 0 && b <= 8 && c > 0 && c <= 8 && d > 0 && d <= 8)
             {
                 if ((a == c) || (b == d) || (Math.Abs(c - a)) == (Math.Abs(d - b)))
                 {
@@ -330,7 +331,7 @@ namespace homework_file3
             d = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Бьет ли фигуру соперника?");
             bool isEmpty = bool.Parse(Console.ReadLine());
-            if (a < 0 && a >= 8 && b < 0 && b >= 8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b > 0 && b <= 8 && c > 0 && c <= 8 && d > 0 && d <= 8)
             {
                 if ((c - a == 1 && d - b == 0) || (isEmpty && c - a == 1 && d - b == 1))
                 {
@@ -357,7 +358,7 @@ namespace homework_file3
             d = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Бьет ли фигуру соперника?");
             isEmpty = bool.Parse(Console.ReadLine());
-            if (a < 0 && a >= 8 && b < 0 && b >= 8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b > 0 && b <= 8 && c > 0 && c <= 8 && d > 0 && d <= 8)
             {
                 if ((a - c == 1 && b - d == 0) || (isEmpty && a - c == 1 && b - d == 1))
                 {
@@ -382,7 +383,7 @@ namespace homework_file3
             c = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Введите номер горизонтали, куда переместится черная пешка");
             d = Convert.ToByte(Console.ReadLine());
-            if (a < 0 && a >= 8 && b < 0 && b >= 8 && c < 0 && c >= 8 && d < 0 && d >= 8)
+            if (a > 0 && a <= 8 && b > 0 && b <= 8 && c > 0 && c <= 8 && d > 0 && d <= 8)
             {
                 if ((Math.Abs(c - a) == 2 && Math.Abs(d - b) == 1) || (Math.Abs(d - b) == 2 && Math.Abs(c - a) == 1))
                 {
